@@ -52,6 +52,10 @@ var nodemailer = require('nodemailer');
 
 
 app.post('/underverification',function(req,res){
+   var maillist = [
+        'codellionapps@gmail.com',
+         req.body.email
+      ];
   var transporter = nodemailer.createTransport({
                  service: 'gmail',
                  auth: {
@@ -65,7 +69,7 @@ app.post('/underverification',function(req,res){
                
                var mailOptions = {
                  from: 'maheshkunder24@gmail.com',
-                 to: req.body.email,"codellionapps@gmail.com",
+                 to:maillist,
                  subject: 'Payment Sucessfull',
                 html:`<html>
                 <head>
@@ -211,6 +215,8 @@ app.post('/sendmailcodellion',function(req,res){
                      rejectUnauthorized: false
                  }
                });
+  
+  
                
                var mailOptions = {
                  from: 'maheshkunder24@gmail.com',
