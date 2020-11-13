@@ -65,7 +65,7 @@ app.post('/underverification',function(req,res){
                
                var mailOptions = {
                  from: 'maheshkunder24@gmail.com',
-                 to: req.body.email,
+                 to: req.body.email,"codellionapps@gmail.com",
                  subject: 'Payment Sucessfull',
                 html:`<html>
                 <head>
