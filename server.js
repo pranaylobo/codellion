@@ -59,7 +59,7 @@ app.post('/underverification',function(req,res){
   var transporter = nodemailer.createTransport({
                  service: 'gmail',
                  auth: {
-                     user: 'codellionemenu@gmail.com',
+                     user: 'emenucodellion@gmail.com',
                      pass: 'alphabeta@delta'
                    },
                    tls: {
@@ -208,8 +208,8 @@ app.post('/sendmailcodellion',function(req,res){
   var transporter = nodemailer.createTransport({
                  service: 'gmail',
                  auth: {
-                     user: 'codellionemenu@gmail.com',
-                     pass: 'alphabeta@delta'
+                    user: 'emenucodellion@gmail.com',
+            pass: 'alphabeta@delta'
                    },
                    tls: {
                      rejectUnauthorized: false
